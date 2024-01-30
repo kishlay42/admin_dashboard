@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* Add this line */
+
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.left {
+  flex: 0 0 20%;
+  /* Use either flex or flex-shrink, not both */
+  background-color: rgb(25, 146, 212);
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(102, 107, 104, 0.15) 0 6px 9px;
+}
+.heading {
+flex: 0 0 70px;
+padding: 15px;
+display: flex;
+margin-bottom: 30px;
+cursor: pointer;
+}
+.heading img{
+  width: 45px;
+}
+.heading p{
+  padding-left: 15px;
+  padding-top: 5px;
+  font-size: 25px;
+  color: rgb(240, 189, 79);
+  font-weight: bold;
+
+}
+.side-ele{
+  flex: 0 0 20px;
+  padding-left:20px ;
+  margin-bottom: 20px;
+  display: flex;
+  cursor: pointer;
+}
+.side-ele img{
+  width: 30px;
+}
+.side-ele p{
+  padding-left: 25px;
+  padding-top: 5px;
+  font-size: 20px;
+  color: white;
+}
+.space{
+  margin-top: 200px;
+}
+.side-ele #comm{
+  margin-bottom: 50px;
+}
+.right {
+  display: flex;
+  flex: 1;
+  /* background-color: gray; */
+  flex-direction: column;
+}
+
+.navbar {
+  flex: 0 0 17%;
+  /* Use either flex or flex-shrink, not both */
+  background-color: white;
+  display: grid;
+  grid-template-columns: 700px 450px;
+  grid-template-rows: 35px 55px;
+  padding-left: 30px;
+  padding-top: 15px;
+  row-gap: 15px;
+  column-gap: 10px;
+  z-index: 1;
+  box-shadow: rgba(139, 78, 7, 0.15) 0 4px 6px;
+
+}
+
+.search {
+  display: flex;
+}
+
+.search img {
+  flex: 0 0 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.search input {
+  flex: 0 0 600px;
+  margin-left: 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(231, 250, 252);
+}
+
+.username {
+  display: flex;
+  cursor: pointer;
+}
+
+.username #notif {
+  flex: 0 0 30px;
+  margin-left: 90px;
+  padding: 5px;
+}
+
+.username #user-image {
+  flex: 0 0 30px;
+  margin: 0 25px 0 15px;
+
+}
+
+.username p {
+  padding-top: 6px;
+}
+
+.profile {
+  display: flex;
+  cursor: pointer;
+
+}
+
+.profile img {
+  flex: 0 0 50px;
+
+}
+
+.credential {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  margin-top: 5px;
+}
+
+.credential #p1 {
+  flex: 0 0 5px;
+}
+
+.credential #p2 {
+  flex: 0 0 15px;
+  font-size: larger;
+}
+
+.options {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 12px 0 12px 0;
+}
+
+.option-box {
+  flex: 0 0 90px;
+  text-align: center;
+  border-radius: 30px;
+  padding-top: 5px;
+  color: white;
+  background-color: rgb(25, 146, 212);
+}
+
+.mbody {
+  display: flex;
+  flex-direction: row;
+  height: 83vh;
+  background-color: rgb(226, 232, 240);
+}
+
+.tabs {
+  flex: 0 0 860px;
+  display: grid;
+  padding: 10px;
+  margin-top: 10px;
+  padding-left: 50px;
+  grid-template-columns: 385px 385px;
+  grid-template-rows: 190px 190px 190px;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.boxes {
+  border-left: 8px solid rgb(255, 208, 0);
+  background-color: white;
+  margin-left: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(180, 103, 14, 0.15) 0 6px 9px;
+}
+
+.sidebar {
+  display: flex;
+  /* Add this line to enable flexbox */
+  flex-direction: column;
+  flex: 0 0 200px;
+  /* Use either flex or flex-shrink, not both */
+  background-color: rgb(226, 232, 240);
+  padding: 20px;
+}
+
+.announce {
+  flex: 0 0 315px;
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: rgba(180, 103, 14, 0.15) 0 6px 9px;
+
+
+}
+
+.trend {
+  border-radius: 10px;
+  flex: 0 0 250px;
+  width: 300px;
+  background-color: white;
+  margin-top: 50px;
+  box-shadow: rgba(180, 103, 14, 0.15) 0 6px 9px;
+
+}
