@@ -10,11 +10,12 @@
 .container {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .left {
   flex: 0 0 20%;
+  height: 124vh;
   /* Use either flex or flex-shrink, not both */
   background-color: rgb(25, 146, 212);
   display: flex;
@@ -66,10 +67,12 @@ cursor: pointer;
   flex: 1;
   /* background-color: gray; */
   flex-direction: column;
+  background-color: rgb(226, 232, 240);
+
 }
 
 .navbar {
-  flex: 0 0 17%;
+  flex: 0 0 14%;
   /* Use either flex or flex-shrink, not both */
   background-color: white;
   display: grid;
@@ -115,12 +118,12 @@ cursor: pointer;
 
 .username #user-image {
   flex: 0 0 30px;
-  margin: 0 25px 0 15px;
+  margin: 0 11px 0 35px;
 
 }
 
 .username p {
-  padding-top: 6px;
+  padding-top: 7px;
 }
 
 .profile {
@@ -166,18 +169,30 @@ cursor: pointer;
   color: white;
   background-color: rgb(25, 146, 212);
 }
+.body-heading{
+  display: flex;
+  font-size: 20px;
+  padding:15px 50px 0px 50px ;/*t r b l*/
+  font-weight: bold;
+}
+.body-heading #h2{
+    position: absolute;
+    right: 205px;
+    font-size: 17px;
+}
+
 
 .mbody {
   display: flex;
   flex-direction: row;
-  height: 83vh;
-  background-color: rgb(226, 232, 240);
+  height: 93vh;
 }
+
 
 .tabs {
   flex: 0 0 860px;
   display: grid;
-  padding: 10px;
+  /* padding: 10px; */
   margin-top: 10px;
   padding-left: 50px;
   grid-template-columns: 385px 385px;
@@ -200,11 +215,14 @@ cursor: pointer;
   flex-direction: column;
   flex: 0 0 200px;
   /* Use either flex or flex-shrink, not both */
-  background-color: rgb(226, 232, 240);
-  padding: 20px;
+  padding:10px 20px 20px 20px;
+  
 }
 
+
 .announce {
+  border-left: 8px solid rgb(122, 226, 219);
+
   flex: 0 0 315px;
   background-color: white;
   border-radius: 10px;
@@ -213,13 +231,22 @@ cursor: pointer;
 
 
 }
+.sidebar p{
+  position: absolute;
+  top: 515px;
+  right: 255px;
+  font-size: 17px;
+  font-weight: bold;
+
+}
 
 .trend {
+  border-left: 8px solid rgb(227, 99, 71);
   border-radius: 10px;
   flex: 0 0 250px;
   width: 300px;
   background-color: white;
-  margin-top: 50px;
+  margin-top: 43px;
   box-shadow: rgba(180, 103, 14, 0.15) 0 6px 9px;
 
 }
